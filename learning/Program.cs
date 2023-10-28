@@ -8,6 +8,8 @@ namespace learning
 {
     internal static class Program
     {
+        public static LoginForm LW;
+        public static RegisterForm RW;
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +18,8 @@ namespace learning
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            RW = new RegisterForm();
+            Application.Run(LW = new LoginForm());
         }
     }
 }

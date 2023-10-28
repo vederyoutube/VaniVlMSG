@@ -30,7 +30,7 @@ namespace learning
 
         private void label2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -85,6 +85,12 @@ namespace learning
                 MessageBox.Show("Welcome back!");
             else
                 MessageBox.Show("wrong login or password");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.RW.Show();
         }
     }
 }
